@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiverr</title>
+    <link rel="shortcut icon" href="./Fiverr logo.png" type="image/x-icon">
+    <style>
+       body {
+        background-image: url(./IMG-20240222-WA0028.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+    }
+    .navlist{
+            list-style-type: none;
+            margin: 20px 0 0 50px;
+            padding: 0;
+        }
+        .navitem {
+            display: inline;
+        }
+        #navimg{
+            height: 80px;
+            width: 80px;
+            vertical-align: middle; 
+        }
+        .navitem a{
+            display: inline-block; 
+            color: white;
+            text-decoration: none;
+            vertical-align: middle; 
+        }
+        .navitem a:hover{
+            display: inline-block; 
+            color: white;
+            text-decoration: underline;
+            vertical-align: middle; 
+        }
+        #cname{
+            font-size: larger;
+            display: inline;
+            vertical-align: middle; 
+            margin-left: 5px; 
+        }
+        #navpages{
+            margin-left: 35em;
+            
+        }
+        .noselect{
+            color: rgb(192, 181, 181) !important;
+            margin-left: 50px;
+        }
+        .signupbutton{
+            width: 70px;
+            height: 30px;
+            border: 1px solid white;
+            background-color: transparent;
+            color: white;
+            border-radius: 5px;
+           float: right;
+           margin-right: 100px;
+          margin-top: 10px;
+          cursor: pointer;
+          text-align: center;
+          transition: 0.3s;
+        }
+        .signupbutton:hover{
+            background-color: rgb(43, 46, 45)
+        }
+        .content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 60vh;
+            
+        }
+        .text1{
+            margin-left: 2em;
+            color: white;
+            font-weight: bold;
+            font-size:3em;
+        }
+        .searchbox{
+            display: flex;
+            align-items: center;
+        }
+        #search{
+            width: 25%;
+            margin-left: 7em;
+            margin-top: 20px;
+            height: 35px;
+            border-radius: 2px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            border: none;
+        }
+        .extratext{
+            margin-top: 10px;
+            margin-left: 6em;
+            color: rgba(255, 255, 255, 0.753);
+        }
+        #newbtn{
+    background-color: transparent;
+    color:  rgba(255, 255, 255, 0.753);
+    cursor: pointer;
+    text-align: center;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.753); 
+    margin: 5px;
+}
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="navlist">
+            <li class="navitem"><a href="task1.html"><img src="./Fiverr logo.png" alt="" id="navimg"> </li>
+            <li class="navitem"><a href="#" id="navpages">Fiverr Buisness</a></li>
+            <li class="navitem"><a href="#" class="noselect">Explore</a></li>
+            <li class="navitem"><a href="#" class="noselect">English</a></li>
+            <li class="navitem"><a href="#" class="noselect">Become Seller</a></li>
+            <li class="navitem"><a href="#" class="noselect">Sign in</a></li>
+            <li class="navitem"><button class="signupbutton"><a href="./task2.1.html" target="_blank">Sign Up</a></button></li>
+        </ul>
+       </nav>
+    <div class="content">
+        <div class="text1">
+            Fiverr website clone with <br> html,css,Javascipt
+        </div>
+        <div class="searchbox">
+            <input type="text" id="search" placeholder="Search for any service"><button style="background-color: rgb(64, 189, 112); border: none ;margin-top: 20px;" ><img  src="./—Pngtree—search icon_4490393.png" alt="not loaded" height="33px" style="border: none;"> </button>
+
+        </div>
+        <div class="extratext">
+            <span id="popular">Popular: </span> <button id="newbtn">Website Design</button><button id="newbtn">Logo Design</button><button id="newbtn">Wordpress</button>
+            <button id="newbtn">Ai Design</button>
+        </div>
+    </div>
+</body>
+</html>

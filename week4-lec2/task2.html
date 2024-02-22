@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+    }
+
+    form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    form h1 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    form input[type="text"],
+    form input[type="password"],
+    form input[type="email"],
+    form input[type="tel"],
+    form input[type="date"],
+    form select {
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    form button[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    form button[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+
+    form label {
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+
+<form id="myform">
+    <h1>Sign Up</h1>
+    <label for="username">Username</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" required>
+    <span id="errorMessage" style="color: red;"></span><br>
+    <label for="birthdate">Birthdate</label>
+    <input type="date" id="birthdate" name="birthdate" required>
+
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" required>
+    <span id="emailerror" style="color: red;"></span><br>
+    <label for="gender">Gender</label>
+    <select id="gender" name="gender" required>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+    </select>
+
+    <label for="phonenumber">Phone Number</label>
+    <input type="tel" id="phonenumber" name="phonenumber" required>
+    <span id="phoneerror" style="color: red;"></span><br>
+    <label for="zipcode">Zip Code</label>
+    <input type="text" id="zipcode" name="zipcode" required>
+    <span id="ziperror" style="color: red;"></span><br>
+    <label for="country">Country</label>
+    <input type="text" id="country" name="country" required>
+
+    <button type="submit">Submit</button>
+</form>
+
+
+
+
+<script>
+    document.getElementById('myform').addEventListener('submit',function(event){
+        event.preventDefault();
+
+        const passvalue=document.getElementById("password").value;
+        const lengthreg=/^.{8,20}$/;
+        const patternreg=/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).+$/;
+        if(!lengthreg.test(passvalue)){
+            document.getElementById("errorMessage").innerText = "Input must be 8-20 characters long.";
+          return;
+        }
+        if(!patternreg.test(passvalue)){
+            document.getElementById("errorMessage").innerText = "Input must contain at least one lowercase letter, one uppercase letter, and one number.";
+            return;
+        }
+       
+        document.getElementById("errorMessage").innerText = "";
+        const emailvalue=document.getElementById("email").value;
+        const emailreg=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if(!emailreg.test(emailvalue)){
+            document.getElementById("emailerror").innerText="Email should be abc@xyz.com"
+            return;
+        }
+        document.getElementById("emailerror").innerText="";
+        const phonelen=/^.{11,11}$/;
+        const phonereg=/^\d+$/;
+        const phonevalue=document.getElementById("phonenumber").value;
+        if(!phonelen.test(phonevalue)){
+            document.getElementById("phoneerror").innerText="Enter 11 numbers!";
+            return;
+        }
+        document.getElementById("phoneerror").innerText="";
+        if(!phonereg.test(phonevalue)){
+            document.getElementById("phoneerror").innerText="Enter only numbers!";
+            return;
+        }
+        document.getElementById("phoneerror").innerText="";
+
+
+
+        const ziplen=/^.{5,5}$/;
+        const zipreg=/^\d+$/;
+        const zipvalue=document.getElementById("zipcode").value;
+        if(!ziplen.test(zipvalue)){
+            document.getElementById("ziperror").innerText="Enter 5 numbers!";
+            return;
+        }
+        document.getElementById("ziperror").innerText="";
+        if(!zipreg.test(zipvalue)){
+            document.getElementById("ziperror").innerText="Enter only numbers!";
+            return;
+        }
+        document.getElementById("ziperror").innerText="";
+        
+    })
+</script>
+</body>
+</html>
