@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocer Home</title>
+    <link rel="icon" href="./salad.png" type="image/x-icon">
+    <link rel="stylesheet" href="./banner.css">
+    <link rel="stylesheet" href="./banner2.css">
+    <link rel="stylesheet" href="./customer.css">
+    <link rel="stylesheet" href="./footer.css">
+    <style>
+       
+    @media (min-width: 1080px) {
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: rgb(17, 99, 55);
+        background-image: linear-gradient(to right, rgb(4, 29, 16), rgb(17, 111, 59));
+    }
+    .hero{
+            display: flex;
+            flex-direction: row;
+        }
+        .navlist{
+            list-style-type: none;
+            margin: 20px 0 0 50px;
+            padding: 0;
+        }
+        .navitem {
+            display: inline;
+        }
+        #navimg{
+            height: 50px;
+            width: 50px;
+            vertical-align: middle; 
+        }
+        .navitem a{
+            display: inline-block; 
+            color: white;
+            text-decoration: none;
+            vertical-align: middle; 
+        }
+        .navitem a:hover{
+            display: inline-block; 
+            color: white;
+            text-decoration: underline;
+            vertical-align: middle; 
+        }
+        #cname{
+            font-size: larger;
+            display: inline;
+            vertical-align: middle; 
+            margin-left: 5px; 
+        }
+        #navpages{
+            margin-left: 300px;
+            
+        }
+        .noselect{
+            color: rgb(192, 181, 181) !important;
+            margin-left: 50px;
+        }
+        .signupbutton{
+            width: 70px;
+            height: 30px;
+            border: 1px solid white;
+            background-color: transparent;
+            color: white;
+            border-radius: 5px;
+           float: right;
+           margin-right: 100px;
+          margin-top: 10px;
+          cursor: pointer;
+          text-align: center;
+          transition: 0.3s;
+        }
+        .signupbutton:hover{
+            background-color: rgb(38, 111, 73)
+        }
+      
+        .container1{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+        }
+        .container2{
+            width: 50%;
+            
+           
+        }
+        .label1{
+             margin-top: 100px;
+             color: rgb(209, 205, 205);
+             background: rgba(99, 97, 97, 0.4); 
+             border-radius: 15px;
+             align-self: center;
+        }
+       #img2{
+        height: 20px;
+        width: 20px;
+        filter: invert(100%);    
+        vertical-align: middle;  
+       padding-left: 20px;
+       
+       }
+       #labeltxt{
+        vertical-align: middle;
+        text-align: center;
+        padding-right: 20px;
+        color: rgb(215, 207, 207) !important;
+        font-size: 12px;
+       }
+      
+       
+
+.download{
+    align-self: center;
+}
+  .dtext{
+    color: white;
+    font-size: 18;
+    margin-left: -40px;
+  }
+  #down1{
+    height: 50px;
+    width: 100px;
+    text-decoration: none;
+    margin-left: -50px;
+  }
+  #down2{
+    height: 32px;
+    width: 100px;
+    text-decoration: none;
+    margin-left: -190;
+    vertical-align: top;
+    margin-top: 10px;
+  }
+  #dobj{
+    width: 80%;
+    height: 95%;
+    margin-top: 60px;
+    background: rgb(0, 128, 0);
+    border-radius: 15px;
+    margin-right: 80px;
+
+  }
+}
+    @media (max-width: 1080px) {
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: rgb(17, 99, 55);
+        background-image: linear-gradient(to right, rgb(4, 29, 16), rgb(17, 111, 59));
+    
+    }
+    .hero{
+            display: flex;
+            flex-direction: column;
+        }
+        .navlist{
+            list-style-type: none;
+            margin: 20px 0 0 50px;
+            padding: 0;
+        }
+        .navitem {
+            display: inline;
+        }
+        #navimg{
+            height: 50px;
+            width: 50px;
+            vertical-align: middle; 
+        }
+        .navitem a{
+            display: inline-block; 
+            color: white;
+            text-decoration: none;
+            vertical-align: middle; 
+        }
+        .navitem a:hover{
+            display: inline-block; 
+            color: white;
+            text-decoration: underline;
+            vertical-align: middle; 
+        }
+        #cname{
+            font-size: larger;
+            display: inline;
+            vertical-align: middle; 
+            margin-left: 5px; 
+        }
+        #navpages{
+            margin-left: 5em;
+            
+        }
+        .noselect{
+            color: rgb(192, 181, 181) !important;
+            margin-left: 50px;
+        }
+        .signupbutton{
+            width: auto;
+            height: auto;
+            border: 1px solid white;
+            background-color: transparent;
+            color: white;
+            border-radius: 5px;
+           float: right;
+           margin-right: 100px;
+          margin-top: 10px;
+          cursor: pointer;
+          text-align: center;
+          transition: 0.3s;
+        }
+        .signupbutton:hover{
+            background-color: rgb(38, 111, 73)
+        }
+      
+        .container1{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .container2{
+            width: 100%;
+            
+           
+        }
+        .label1{
+             margin-top: 100px;
+             color: rgb(209, 205, 205);
+             background: rgba(99, 97, 97, 0.4); 
+             border-radius: 15px;
+             align-self: center;
+        }
+       #img2{
+        height: 20px;
+        width: 20px;
+        filter: invert(100%);    
+        vertical-align: middle;  
+       padding-left: 20px;
+       
+       }
+       #labeltxt{
+        vertical-align: middle;
+        text-align: center;
+        padding-right: 20px;
+        color: rgb(215, 207, 207) !important;
+        font-size: 12px;
+       }
+      
+       
+
+.download{
+    align-self: center;
+}
+  .dtext{
+    color: white;
+    font-size: 18;
+    margin-left: -40px;
+  }
+  #down1{
+    height: 50px;
+    width: 100px;
+    text-decoration: none;
+    margin-left: -50px;
+  }
+  #down2{
+    height: 32px;
+    width: 100px;
+    text-decoration: none;
+    margin-left: -190;
+    vertical-align: top;
+    margin-top: 10px;
+  }
+  #dobj{
+    width: 80%;
+    height: 95%;
+    margin-top: 60px;
+    background: rgb(0, 128, 0);
+    border-radius: 15px;
+    margin-right: 80px;
+    margin-left: 10em;
+
+  }
+
+    }
+    @media (max-width: 714px) {
+        body {
+        margin: 0;
+        padding: 0;
+        background-color: rgb(17, 99, 55);
+        background-image: linear-gradient(to right, rgb(4, 29, 16), rgb(17, 111, 59));
+    
+    }
+    .hero{
+            display: flex;
+            flex-direction: column;
+        }
+        .navlist{
+            list-style-type: none;
+            margin: 10px 0 0 25px;
+            padding: 0;
+        }
+        .navitem {
+            display: inline;
+        }
+        #navimg{
+            height: 25px;
+            width: 25px;
+            vertical-align: middle; 
+        }
+        .navitem a{
+            display: inline-block; 
+            color: white;
+            text-decoration: none;
+            vertical-align: middle; 
+        }
+        .navitem a:hover{
+            display: inline-block; 
+            color: white;
+            text-decoration: underline;
+            vertical-align: middle; 
+        }
+        #cname{
+            font-size: larger;
+            display: inline;
+            vertical-align: middle; 
+            margin-left: 5px; 
+        }
+        #navpages{
+            margin-left: 2.5em;
+            
+        }
+        .noselect{
+            color: rgb(192, 181, 181) !important;
+            margin-left: 25px;
+        }
+        .signupbutton{
+            width: auto;
+            height: auto;
+            border: 1px solid white;
+            background-color: transparent;
+            color: white;
+            border-radius: 5px;
+           float: right;
+           margin-right: 50px;
+          margin-top: 5;
+          cursor: pointer;
+          text-align: center;
+          transition: 0.3s;
+          font-size: auto;
+        }
+        .signupbutton:hover{
+            background-color: rgb(38, 111, 73)
+        }
+      
+        .container1{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .container2{
+            width: 100%;
+            
+           
+        }
+        .label1{
+             margin-top: 50px;
+             color: rgb(209, 205, 205);
+             background: rgba(99, 97, 97, 0.4); 
+             border-radius: 15px;
+             align-self: center;
+        }
+       #img2{
+        height: 10px;
+        width: 10px;
+        filter: invert(100%);    
+        vertical-align: middle;  
+       padding-left: 10px;
+       
+       }
+       #labeltxt{
+        vertical-align: middle;
+        text-align: center;
+        padding-right: 10px;
+        color: rgb(215, 207, 207) !important;
+        font-size: 8px;
+       }
+      
+       
+
+.download{
+    align-self: center;
+}
+  .dtext{
+    color: white;
+    font-size: 9px;
+    margin-left: -20px;
+  }
+  #down1{
+    height: 25px;
+    width: 50px;
+    text-decoration: none;
+    margin-left: -25px;
+  }
+  #down2{
+    height: 16px;
+    width: 50px;
+    text-decoration: none;
+    margin-left: -80;
+    vertical-align: top;
+    margin-top: 5px;
+  }
+  #dobj{
+    width: 80%;
+    height: 95%;
+    margin-top: 30px;
+    background: rgb(0, 128, 0);
+    border-radius: 7.5px;
+    margin-right: 40px;
+    margin-left: 5em;
+
+  }
+
+    }
+   
+    </style>
+</head>
+
+<body>
+    
+   <nav class="navbar">
+    <ul class="navlist">
+        <li class="navitem"><a href="task1.html"><img src="./salad.png" alt="" id="navimg"> <span id="cname">Grocery</span></a></li>
+        <li class="navitem"><a href="#" id="navpages">Home</a></li>
+        <li class="navitem"><a href="#" class="noselect">Services</a></li>
+        <li class="navitem"><a href="#" class="noselect">About US</a></li>
+        <li class="navitem"><a href="#" class="noselect">Categories</a></li>
+        <li class="navitem"><a href="#" class="noselect">Contact</a></li>
+        <li class="navitem"><button class="signupbutton"><a href="./task2.1.html" target="_blank">Sign Up</a></button></li>
+    </ul>
+   </nav>
+
+   <div class="hero">
+       <div class="container1">
+           <div class="label1"><img src="./delivery-truck.png" alt="" id="img2"> <span id="labeltxt">Food Delivery Service & Resturant</span></div>
+           <div class="banner">
+            <span>G</span><span>e</span><span>t</span><span> f</span><span>r</span><span>e</span><span>s</span><span>h </span>
+            <span>G</span><span>r</span><span>o</span><span>c</span><span>e</span><span>r</span><span>y</span><br>
+           </div>
+           <div class="banner2">Enjoy healthy life.</div>
+           <div class="category">
+            <label for="Categories" id="label2">Select Category</label>
+            <select name="Categories" id="Categories">
+                <option value="Vegetables">Vegetables</option>
+                <option value="Meat">Meat</option>
+                <option value="Cleaning">Cleaning</option>
+                <option value="Drinks">Drinks</option>
+            </select>
+            <span id="shop"><a href="">Shop Now</a></span>
+            
+           </div>
+           <div id="signup">Not yet Member? <a href=""> Sign Up</a> Now</div>
+           <div class="customers">
+                   <img src="./customer1.jpg" alt="" id="cimg1" class="cimg">
+                   <img src="./customer2.jpg" alt="" id="cimg2" class="cimg">
+                   <img src="./customer3.jpg" alt="" id="cimg3" class="cimg">
+                   <span id="ctext">Our Happy Customers </span><span id="ctext2">(12.8k customers)</span>
+           </div>
+           <div class="download">
+            <div class="dtext">
+                Download App
+            </div>
+           <a href="" class="down"> <img src="./playstore.png" alt="" id="down1"></a><a href="" class="down"> <img src="./appstore.png" alt="" id="down2"></a>
+           </div>
+       </div>
+             
+       <div class="container2">
+        <img src="./nrd-D6Tu_L3chLE-unsplash.jpg" alt="" id="dobj">
+       </div>
+   </div>
+   <div class="footer">
+          <div class="social">
+            <img src="./facebook.png" alt="" class="socialmedia"> <img src="./instagram.png" alt="" class="socialmedia"> <img src="./twitter.png" alt="" class="socialmedia"> <img src="./linkedin.png" alt="" class="socialmedia">
+          </div>
+          <div id="seprater"></div>
+          <div class="contact">
+            <span id="phone">Phone: 0301-6060443</span> <span id="email">Email: f219213@cfd.nu.edu.pk</span><br>
+            <span id="rights">© 2024 Grocery Name. All rights reserved.
+            </span>
+          </div>
+   </div>
+</body>
+</html>

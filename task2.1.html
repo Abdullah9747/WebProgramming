@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocer Sign Up</title>
+    <link rel="icon" href="./salad.png" type="image/x-icon">
+</head>
+<style>
+   
+    .signup{
+        display: flex;
+     justify-content: center;
+     align-items: center;
+    }
+    .form{
+        display: flex;
+        overflow: auto;
+        flex-direction: column;
+        margin-top: 4em;
+        width: 25%;
+        border: 1px solid grey;
+        height: 80vh;
+        align-self: center;
+        border-radius: 15px;
+    }
+    .signtext{
+      margin-top: 1em;
+      margin-left: 1em;
+      font-size: 1.75em;
+       font-weight: bold;
+       color: black;
+
+    }
+    .email{
+        margin-top: 2em;
+      margin-left: 1em;
+      padding-bottom: 15px;
+      font-size: 1.1em;
+       font-weight:600 ;
+       color: black;
+    }
+    #haveacc{
+        padding-left: 9em;
+        font-size: 0.75em;
+    }
+    #haveacc a{
+        text-decoration: none;
+        color: green;
+    }
+    #emailinput{
+        border: 1px solid rgb(217, 210, 210);
+        border-radius: 5px;
+        height: 3em;
+        width: 94%;
+        margin-top: 10px;
+    }
+    
+
+    .pass{
+        margin-top: 1.5em;
+      margin-left: 1em;
+      padding-bottom: 15px;
+      font-size: 1.1em;
+       font-weight:600 ;
+       color: black;
+    }
+    #passwordinput{
+        border: 1px solid rgb(217, 210, 210);
+        border-radius: 5px;
+        height: 3em;
+        width: 94%;
+        margin-top: 10px;
+    }
+  
+    #b1{
+       background-color: #04AA6D;
+       height: 3em;
+
+       width: 90%;
+       margin-left: auto;
+       margin-right: auto;
+       border-radius: 20px;
+       color: white;
+       border: none;
+    }
+    #b1 a{
+        text-decoration: none;
+        color:white
+    }
+    .sep{
+        margin-top: 2.5em;
+        border: 1px solid rgb(206, 199, 199);
+    }
+    #b2 {
+    display: flex;
+    justify-content: center; /* Align content in center */
+    margin-top: 1em;
+    background-color: #1877F2;
+    height: 3em;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    color: white;
+    border: none; /* Remove border */
+    outline: none; /* Remove outline */
+    cursor: pointer; /* Add cursor */
+}
+
+#fb {
+    padding-top: 0.5em;
+    height: 2em;
+    width: 2em;
+    padding-right: 1em;
+}
+
+#fbtxt {
+    align-self: center;
+    color: white; /* Set text color */
+    
+}
+
+#b2 a {
+    text-decoration: none;
+    color: white; /* Set text color */
+}
+
+#b2 a:hover {
+    text-decoration: none; /* Remove underline on hover */
+}
+#b3 {
+    display: flex;
+    justify-content: center; /* Align content in center */
+    margin-top: 0.5em;
+    background-color: #ffffff;
+    height: 3em;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(234, 228, 228); /* Remove border */
+    outline: none; /* Remove outline */
+    cursor: pointer; /* Add cursor */
+}
+
+#google {
+    padding-top: 0.5em;
+    height: 2em;
+    width: 2em;
+    padding-right: 1em;
+}
+
+#googletxt {
+    align-self: center;
+    color: rgb(0, 0, 0); /* Set text color */
+    
+}
+
+#b3 a {
+    text-decoration: none;
+    color: rgb(0, 0, 0); /* Set text color */
+}
+
+#b3 a:hover {
+    text-decoration: none; /* Remove underline on hover */
+}
+.privacy{
+    font-size: 0.75em;
+    padding-left: 20px;
+}
+
+</style>
+<body>
+    <div class="signup">
+            <div class="form">
+                <div class="signtext">Sign Up</div>
+                <div class="email">
+                    <label for="email" id="email">Email</label><label for="signup" id="haveacc">Already have an account? <a href="./task2.2.html">Login</a></label><br><input type="text" id="emailinput">
+                </div>
+                <div class="pass">
+                    <label for="password" id="password">Password</label><br><input type="password" id="passwordinput">
+                </div>
+               
+                    <button id="b1"><a href="">Sign Up for free</a></button><br>
+                    <div class="sep"></div>
+                    <button id="b2"> <a href=""><img src="./facebook.png" alt="" id="fb"></a><span id="fbtxt">Continue with Facebook</span></button><br>
+                    <button id="b3"> <a href=""><img src="./google.png" alt="" id="google"></a><span id="googletxt">Continue with Google</span></button><br>
+                
+                <div class="privacy">By clicking the “Sign up for free” button or using any of the social login options, you are creating an account, and agree Grocer' <b>Terms</b> of Service and <b>Privacy Policy</b></div>
+            </div>
+            
+    </div>
+</body>
+</html>

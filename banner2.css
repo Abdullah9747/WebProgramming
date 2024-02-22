@@ -1,0 +1,155 @@
+.banner2{
+    align-self: center;
+    font-weight: 300;
+    font-size: 35px;
+    color:white;
+    padding-left: 30px;
+   }
+
+.category{
+    display: flex;
+    margin-left: 25px;
+    align-items: center;
+    margin-top: 25px;
+    background: rgba(99, 97, 97, 0.4); 
+    color: rgb(209, 205, 205);
+      
+     border-left: 0;
+     border-radius: 20px;
+     align-self: center;
+     left: 0;
+     height: 40px;
+     width: 34%;
+}
+         
+#label2{
+  text-align: center;
+  font-size: 12px;
+   padding: 20px 50px 20px 20px;
+}
+select{
+    background: transparent; 
+    color: white;
+    width: 20px;
+    border-radius: 30px;
+    margin-left: 15px;
+    
+    
+
+
+}
+select option {
+background: rgba(49, 46, 46, 0.686); /* Change background color for options */
+color: black;
+padding: 8px;
+}
+#shop{
+height:auto ;
+width: 100%;
+background-color: yellow;
+font-size: 13px;
+padding:5px;
+margin-left: 25px;
+padding-right: 15px;
+border-top-right-radius: 20px;
+border-bottom-right-radius: 20px;
+line-height: 30px;
+text-align: center;
+
+}
+#shop a{
+text-decoration: none;
+color: #000;
+}
+#signup{
+color: white;
+align-self: center;
+font-size: 10px;
+margin-top: 10px;
+margin-left: -80px;
+color: rgb(209, 205, 205);
+
+}
+#signup a{
+text-decoration: none;
+color: green;
+}
+
+@media (max-width: 1080px) {
+    .banner2{
+        align-self: center;
+        font-weight: 300;
+        font-size: 15px;
+        color:white;
+        padding-left: 15px;
+       }
+    
+    .category{
+        display: flex;
+        margin-left: 12px;
+        align-items: center;
+        margin-top: 12px;
+        background: rgba(99, 97, 97, 0.4); 
+        color: rgb(209, 205, 205);
+          
+         border-left: 0;
+         border-radius: 10px;
+         align-self: center;
+         left: 0;
+         height: 20px;
+         width: 34%;
+    }
+             
+    #label2{
+      text-align: center;
+      font-size: 6px;
+       padding: 10px 25px 10px 10px;
+    }
+    select{
+        background: transparent; 
+        color: white;
+        width: 10px;
+        border-radius: 30px;
+        margin-left: 7.5px;
+        
+        
+    
+    
+    }
+    select option {
+    background: rgba(49, 46, 46, 0.686); /* Change background color for options */
+    color: black;
+    padding: 4px;
+    }
+    #shop{
+    height:auto ;
+    width: 100%;
+    background-color: yellow;
+    font-size: 6.5px;
+    padding:2.5px;
+    margin-left: 6px;
+    padding-right: 7.5px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    line-height: 15px;
+    text-align: center;
+    
+    }
+    #shop a{
+    text-decoration: none;
+    color: #000;
+    }
+    #signup{
+    color: white;
+    align-self: center;
+    font-size: 5px;
+    margin-top: 5px;
+    margin-left: -40px;
+    color: rgb(209, 205, 205);
+    
+    }
+    #signup a{
+    text-decoration: none;
+    color: green;
+    }
+}
