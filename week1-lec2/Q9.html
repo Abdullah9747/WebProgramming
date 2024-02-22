@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peter's Pizza Deliver</title>
+    <style>
+       .rightlabel{
+            display: inline-block;
+            margin-left: 100px;
+            margin-right: 20px;
+            margin-bottom: 2px;
+        }
+        .leftlabel{
+            display: inline-block;
+            margin-left: 60px;
+            margin-right: 20px;
+            margin-bottom: 2px;
+            
+        }
+        input{
+            display: inline-block;
+            margin-bottom: 2px;
+            
+        }
+        
+       
+    </style>
+</head>
+<body>
+  <div class="info">
+   <center><h1>Pete's Pizza Delivery</h1><h2>Online Order Form</h2></center><br><br>
+   <label for="name" class="rightlabel">*Name:</label><input type="text"><label for="tel" class="leftlabel">*Tel:</label><input  required="number"><br><label for="add" class="rightlabel" style="margin-right:6px;">*Address:</label><input required type="text"><label for="email" class="leftlabel" style="margin-right: 1px;">*Email:</label><input  requiredtype="email"><br><label for="town" class="rightlabel" style="margin-left: 90px;margin-right: 4px;">*Town/city:</label><input required type="text"><br><label for="post" class="leftlabel" style="margin-left: 97px;margin-right: 3px;">*Postcode:</label><input  requiredtype="number"><br><br><br><center>*required Fields</center><br><br>
+</div>
+<div class="options">
+    <p><b style="font-size: x-large;margin-left: 200px;">Topping</b><b style="font-size: x-large;margin-left: 70px;">Size</b><b style="font-size: x-large;margin-left: 70px;">Extras</b><br><br><input type="radio" style="display: inline-block;margin-left:200px ;"><label for="mar" >Margherita</label><input type="radio" style="display: inline-block;margin-left: 70px;"><label for="s">Small</label><input type="checkbox" style="display: inline-block;margin-left: 50px;"><label for="M">Mushrooms</label><br><input type="radio" style="display: inline-block;margin-left:200px ;"><label for="mar" >Four Seasons</label><input type="radio" style="display: inline-block;margin-left: 55px;"><label for="s">Medium</label><input type="checkbox" style="display: inline-block;margin-left: 32px;"><label for="M">Green peppers</label><br><input type="radio" style="display: inline-block;margin-left:200px ;"><label for="mar" >Meat Feast</label><input type="radio" style="display: inline-block;margin-left: 70px;"><label for="s">Large</label><input type="checkbox" style="display: inline-block;margin-left: 50px;"><label for="M">Anchovies</label><br><input type="checkbox" style="display: inline-block;margin-left: 460px;"><label for="f">Extra Cheese</label><br><br><br><br></p>
+</div>
+<div class="delivery">
+    <center>
+<label for="pre" style="display: inline-block;margin-right: 20px;">Preferred delivery time:</label>
+<input type="time"><br><label for="1" style="display: inline-block; margin-right: 50px">Delivery instructions:</label><textarea name="1" id="1" cols="12" rows="3"></textarea><br><br><button type="submit">Submit order</button>
+</center>
+</div>
+
+</body>
+</html>

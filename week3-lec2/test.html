@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Month Days</title>
+    <style>
+        .red-text {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <label for="monthInput">Enter the name of the month:</label>
+    <input type="text" id="monthInput">
+    <button onclick="displayMonthDays()">Display Days</button>
+    <div id="result"></div>
+
+    <script>
+        function displayMonthDays() {
+            var monthInput = document.getElementById('monthInput').value;
+            var monthName = monthInput.toLowerCase();
+            var daysInMonth;
+
+            switch (monthName) {
+                case 'jan':
+                case 'mar':
+                case 'may':
+                case 'jul':
+                case 'aug':
+                case 'oct':
+                case 'dec':
+                    daysInMonth = 31;
+                    break;
+                case 'apr':
+                case 'jun':
+                case 'sept':
+                case 'nov':
+                    daysInMonth = 30;
+                    break;
+                case 'feb':
+                    daysInMonth = 28; 
+                    break;
+                default:
+                    daysInMonth = 'Invalid month'; 
+            }
+            
+            var resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = `Number of days in ${monthInput}: <span class="red-text">${daysInMonth}</span>`;
+        }
+    </script>
+</body>
+</html>
