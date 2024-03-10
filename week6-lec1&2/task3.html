@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <img src="./laptop.jpg" alt="Image not loaded" id="img1">
+    <button id="btn1">Hide</button>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("#img1").toggle(2000);
+                $(this).text(function(i,text){
+                    return text==="Hide"?"Show":"Hide";
+                })
+            })
+        })
+    </script>
+</body>
+</html>
