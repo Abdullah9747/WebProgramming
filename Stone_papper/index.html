@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone Papper Scissors</title>
+    <link rel="shortcut icon" href="./fist-bump.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        #computer {
+            margin-left: 8rem;
+            margin-right: 100px;
+        }
+
+        #user {
+            margin-right: 25px;
+        }
+
+        #text {
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            font-size: x-large;
+            color: blueviolet;
+        }
+
+        #rock {
+            margin-left: 8rem;
+            margin-right: 30px;
+        }
+
+        #paper {
+            margin-right: 30px;
+        }
+
+        button {
+            background-color: transparent;
+            border: none;
+        }
+
+        #stext {
+            margin-left: 8rem;
+            margin-right: 60px;
+        }
+
+        #ptext {
+            margin-right: 40px;
+        }
+
+        .card {
+            background-color: rgb(208, 219, 204);
+        }
+        body{
+            background-color: rgb(226, 235, 223);
+        }
+        #uscore{
+            margin-left: 15px;
+            margin-right: 18rem;
+            color: blueviolet;
+        }
+        #cscore{
+            color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-md  d-flex flex-column  justify-content-center align-items-center  vh-100 ">
+        <div class="card " style="width: 30rem;">
+            <div class="body mt-3 mb-3">
+                <div>
+                    <span id="uscore" >
+                        
+                    </span>
+                    <span id="cscore"></span>
+                </div>
+                <span id="computer"><img src="./computer.png" alt="not loaded" height="50px"></span>
+                <span id="user"><img src="./user.png" alt="not loaded" height="50px"></span>
+                <div id="text">Let's Play!!</div>
+                <span id="rock"><button id="rbtn"><img src="./fist.png" alt="nor loaded" height="50px"></button></span>
+                <span id="paper"><button id="pbtn"><img src="./hand-paper.png" alt="not loaded" height="50px"></button></span>
+                <span id="scissors"><button id="sbtn"><img src="./scissors.png" alt="not loaded" height="50px"></button></span>
+                <br>
+                <span id="stext">Stone</span>
+                <span id="ptext">Paper</span>
+                <span id="sctext">Scissors</span>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script>
+        let computer=0;
+        let user=0;
+        $(document).ready(function () {
+            resetimg();
+            $('#rbtn').click(function(){
+                const random=getRandomNumber();
+                if(random==1){
+                    let comp=document.getElementById('computer');
+                    comp.innerHTML=`<img src="./computer.png" alt="not loaded" height="50px">`;
+                    let us=document.getElementById('user');
+                    us.innerHTML=`<img src="./user.png" alt="not loaded" height="50px">`;
+                    document.getElementById('text').innerHTML="Match tied";
+                    
+                }
+                else if(random==2){
+                    let us=document.getElementById('user');
+                    us.innerHTML=`<img src="./user.png" alt="not loaded" height="50px">`;
+                    let comp=document.getElementById('computer');
+                    comp.innerHTML=`<img src="./hand-paper.png" alt="not loaded" height="50px">`;
+                    document.getElementById('text').innerHTML="User Wins";
+                    user+=1;
+                    
+
+                }
+                else{
+                    let us=document.getElementById('user');
+                    us.innerHTML=`<img src="./user.png" alt="not loaded" height="50px">`;
+                    let comp=document.getElementById('computer');
+                    comp.innerHTML=`<img src="./scissors.png" alt="not loaded" height="50px">`;
+                    document.getElementById('text').innerHTML="Computer Wins";
+                    computer+=1;
+                    
+                }
+                document.getElementById('uscore').innerHTML=`User: ${user}`;
+                document.getElementById('cscore').innerHTML=`computer: ${computer}`;
+                return;
+            })
+            $('#pbtn').click(function(){
+                const random=getRandomNumber();
+                if(random==1){
+                    let comp=document.getElementById('computer');
+                    comp.innerHTML=`<img src="./computer.png" alt="not loaded" height="50px">`;
+                    let us=document.getElementById('user');
+                    us.innerHTML=`<img src="./hand-paper.png" alt="not loaded" height="50px">`;
+                    document.getElementById('text').innerHTML="User wins";
+                    user+=1;
+                  
+                }
+                else if(random==2){
+
+                    let us=document.getElementById('user');
+                    us.innerHTML=`<img src="./hand-paper.png" alt="not loaded" height="50px">`;
+                    let comp=document.getElementById('computer');
+                    comp.innerHTML=`<img src="./hand-paper.png" alt="not loaded" height="50px">`;
+                    document.getElementById('text').innerHTML="Match tied";
+                    
+
+                }
+                else{
+                    let us=document.getElementById('user');
+                    us.innerHTML=`<img src="./hand-paper.png" alt="not loaded" height="50px">`;
+                    let comp=document.getElementById('computer');
+                    comp.innerHTML=`<img src="./scissors.png" alt="not loaded" height="50px">`;
+                    document.getElementById('text').innerHTML="Computer Wins";
+                    computer+=1;
+                   
+                }
+                document.getElementById('uscore').innerHTML=`User: ${user}`;
+                document.getElementById('cscore').innerHTML=`Computer: ${computer}`;
+                return;
+
+            })
+            $('#sbtn').click(function(){
+                const random=getRandomNumber();
+                if(random==1){
+                    let comp=document.getElementById('computer');
+                    comp.innerHTML=`<img src="./computer.png" alt="not loaded" height="50px">`;
+                    let us=document.getElementById('user');
+                    us.innerHTML=`<img src="./scissors.png" alt="not loaded" height="50px">`;
+                    document.getElementById('text').innerHTML="Computer Wins";
+                    computer+=1;
+                    
+                }
+                else if(random==2){
+                    let us=document.getElementById('user');
+                    us.innerHTML=`<img src="./scissors.png" alt="not loaded" height="50px">`;
+                    let comp=document.getElementById('computer');
+                    comp.innerHTML=`<img src="./hand-paper.png" alt="not loaded" height="50px">`;
+                    document.getElementById('text').innerHTML="User Wins";
+                    user+=1;
+                
+
+                }
+                else{
+                    let us=document.getElementById('user');
+                    us.innerHTML=`<img src="./scissors.png" alt="not loaded" height="50px">`;
+                    let comp=document.getElementById('computer');
+                    comp.innerHTML=`<img src="./scissors.png" alt="not loaded" height="50px">`;
+                    document.getElementById('text').innerHTML="Match Tied";
+                   
+                }
+                document.getElementById('uscore').innerHTML=`User: ${user}`;
+                document.getElementById('cscore').innerHTML=`computer: ${computer}`;
+                return;
+
+            })
+        })
+        setInterval(resetimg,1000);
+        function resetimg(){
+            let comp=document.getElementById('computer');
+                    comp.innerHTML=`<img src="./computer.png" alt="not loaded" height="50px">`;
+                    let us=document.getElementById('user');
+                    us.innerHTML=`<img src="./user.png" alt="not loaded" height="50px">`;
+        }
+        function getRandomNumber() {
+            return Math.floor(Math.random() * 3) + 1;
+        }
+    </script>
+</body>
+
+</html>
