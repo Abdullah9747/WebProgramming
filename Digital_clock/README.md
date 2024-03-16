@@ -22,7 +22,7 @@ This is a simple digital clock web page displaying the current time including ho
 
 ## Preview
 
-![Digital Clock Preview](preview.png)
+![alt text](image.png)
 
 ## Contributing
 
